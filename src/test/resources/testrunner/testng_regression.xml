@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="OrangeHRM App Test Regression Suite" thread-count="3"
+	parallel="tests" verbose="4">
+	
+	
+	<listeners>
+		<listener class-name="com.aventstack.chaintest.plugins.ChainTestListener" />
+		<listener class-name="com.qa.OrangeHRM.listeners.TestAllureListener" />
+		<listener class-name="com.qa.OrangeHRM.listeners.AnnotationTransformer" />
+	</listeners>
+
+
+	<test name="Login Page Test">
+	<!--<parameter name="browser" value="chrome" /> if we want to execute testcase in chrome -->
+	<!--	<parameter name="browserversion" value="126.0" /> we can pass browser version-->
+		<classes>
+			<class name="com.qa.OrangeHRM.tests.LoginPageTest" />
+		</classes>
+	</test>
+	
+	<!--suppose we want to execute Login Page Test in 3 multiple beowser then we need to change test name 
+	like <test name="Login Page Test_chrome"> remaining class name will same-->
+
+
+	<test name="Home Page Test">
+	<!--<parameter name="browser" value="firefox" /> -->
+		<classes>
+			<class name="com.qa.OrangeHRM.tests.HomePageTest" />
+		</classes>
+	</test>
+	
+	<test name="Product Info Page Test">
+	<!--<parameter name="browser" value="Edge" /> -->
+		<classes>
+			<class name="com.qa.OrangeHRM.tests.ProductInfoPageTest" />
+		</classes>
+	</test>
+
+	
+
+
+</suite>	
