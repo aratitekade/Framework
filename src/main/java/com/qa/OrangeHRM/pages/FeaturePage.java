@@ -13,7 +13,7 @@ public class FeaturePage {
 		//then create tag : git tag v2.0 then git push origin v2.0
 		System.out.println("f2 feture");
 		
-		//again adding new feature
+		//again adding new feature: git tag v3.0
 		System.out.println("f3 feture");
 
 	}
