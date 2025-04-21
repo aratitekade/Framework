@@ -4,7 +4,7 @@ public class AppConstants {
 	
 	public final static int DEFAULT_TIME_OUT=5;
 	
-	public final static String LOGIN_PAGE_TITLE="OrangeHRM11";
+	public final static String LOGIN_PAGE_TITLE="OrangeHRM";
 	public final static String LOGIN_PAGE_URL_FRACTION="orangehrmlive.com";
 	
 	public final static String HOME_PAGE_TITLE="OrangeHRM";
