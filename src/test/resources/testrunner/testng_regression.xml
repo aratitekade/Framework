@@ -3,7 +3,7 @@
 
 <suite name="OrangeHRM App Test Regression Suite" thread-count="3"
 	parallel="tests" verbose="4">
-	
+	<parameter name="browser" value="chrome" />
 	
 	<listeners>
 		<listener class-name="com.aventstack.chaintest.plugins.ChainTestListener" />
@@ -15,6 +15,7 @@
 	<test name="Login Page Test">
 	<!--<parameter name="browser" value="chrome" /> if we want to execute testcase in chrome -->
 	<!--	<parameter name="browserversion" value="126.0" /> we can pass browser version-->
+		
 		<classes>
 			<class name="com.qa.OrangeHRM.tests.LoginPageTest" />
 		</classes>

@@ -7,10 +7,10 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.chaintest.plugins.ChainTestListener;
 import com.aventstack.chaintest.service.ChainPluginService;
-import com.beust.jcommander.Parameters;
 import com.qa.OrangeHRM.factory.DriverFactory;
 import com.qa.OrangeHRM.pages.CommonsPage;
 import com.qa.OrangeHRM.pages.HomePage;
@@ -35,7 +35,7 @@ public class BaseTest {
 	protected ProductInfoPage productInfoPage;
 	protected CommonsPage commonspage;
 
-  //@Parameters({"browser"}) in testng if we pass parameter as browser
+    @Parameters({"browser"}) //in testng if we pass parameter as browser
 	@BeforeTest(description="In Setup method, initialiaze the driver and properties..")
 	public void setup(String browserName) {
 		df=new DriverFactory();
