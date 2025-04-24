@@ -116,7 +116,8 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>src/test/resources/testrunner/testng_regression.xml</suiteXmlFile>
 				<!--if we want to run testcases via cmd line by passing ${suiteXmlFile} var
-syntax:mvn clean install -Denv="qa" -Dsurefire.suiteXmlFiles="src/test/resources/testrunner/testng_regression.xml"-->
+syntax:mvn clean install -Denv="qa" -Dsurefire.suiteXmlFiles="src/test/resources/testrunner/testng_regression.xml"
+and for running testcases on jenkins uncomment below line-->
 						<!--<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>-->
 					</suiteXmlFiles>
 					
